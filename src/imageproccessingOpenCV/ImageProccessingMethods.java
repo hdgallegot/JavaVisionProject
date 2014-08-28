@@ -139,7 +139,7 @@ public class ImageProccessingMethods {
             double area = Imgproc.contourArea(contours.get(i));
             if(MyBooleans.flag){
                 System.out.println(area);
-            }           
+            }
             if(area < MyIntegers.minContours || area > MyIntegers.maxContours){
                 contours.remove(i);
             }else if(area > MyIntegers.mediumContours && area < MyIntegers.maxContours){
@@ -147,9 +147,11 @@ public class ImageProccessingMethods {
             }
         }
         
+        System.out.println("");
+        
         Imgproc.drawContours(result, contours, -1, new Scalar(0), 2);
         
-//         MyBooleans.flag = false;
+         MyBooleans.flag = false;
          
          //centros de masa
          for(int i = 0; i < contoursGeneral.size(); i++){

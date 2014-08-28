@@ -41,7 +41,10 @@ public class Camera {
     public void openCamera(int value) {
         if (!isOpen) {
             camera = new VideoCapture(value);
+        
             camera.open(value); //Useless
+        boolean wset = camera.set(Highgui.CV_CAP_PROP_FRAME_WIDTH, 180);
+        boolean hset = camera.set(Highgui.CV_CAP_PROP_FRAME_HEIGHT, 120);
             cameraStart = new ThreadCamera(camera, usersCamera);
             if (!camera.isOpened()) {
                 System.out.println("Camera Error");

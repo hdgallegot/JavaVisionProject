@@ -21,9 +21,9 @@ import values.MyIntegers;
 public class InRange {
     public static void main(String[] args) {
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
-        VideoCapture camera =  new VideoCapture(0);
+        VideoCapture camera =  new VideoCapture(1);
         Mat framevideo = new Mat();
-        camera.open(0);
+        camera.open(1);
         camera.read(framevideo);
         Highgui.imwrite("image.png", framevideo);
         Highgui.imwrite("imageInRange.png", preproc(framevideo));
