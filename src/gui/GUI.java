@@ -10,12 +10,12 @@ package gui;
  *
  * @author aldajo
  */
-public class Buttons extends javax.swing.JPanel {
+public class GUI extends javax.swing.JPanel {
 
     /**
      * Creates new form Buttons
      */
-    public Buttons() {
+    public GUI() {
         initComponents();
     }
 
@@ -30,6 +30,7 @@ public class Buttons extends javax.swing.JPanel {
 
         arrayButtons1 = new gui.arrayButtons();
         jTabbedPane1 = new javax.swing.JTabbedPane();
+        iMage1 = new camera.IMage();
         myPanelButtons1 = new gui.MyPanelButtons();
 
         setMinimumSize(new java.awt.Dimension(900, 300));
@@ -38,6 +39,7 @@ public class Buttons extends javax.swing.JPanel {
         jTabbedPane1.setMinimumSize(new java.awt.Dimension(200, 100));
         jTabbedPane1.setOpaque(true);
         jTabbedPane1.setPreferredSize(new java.awt.Dimension(300, 300));
+        jTabbedPane1.addTab("Camera", iMage1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -64,11 +66,14 @@ public class Buttons extends javax.swing.JPanel {
                         .addComponent(myPanelButtons1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
+
+        jTabbedPane1.getAccessibleContext().setAccessibleName("Camera");
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private gui.arrayButtons arrayButtons1;
+    private camera.IMage iMage1;
     private javax.swing.JTabbedPane jTabbedPane1;
     private gui.MyPanelButtons myPanelButtons1;
     // End of variables declaration//GEN-END:variables

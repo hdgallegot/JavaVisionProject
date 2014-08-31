@@ -5,8 +5,11 @@
 package graphics.frame;
 
 import java.awt.Color;
-import java.awt.HeadlessException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JFrame;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 import values.MyColors;
 
 /**
@@ -17,7 +20,13 @@ public class MyFrame extends JFrame{
 
     public MyFrame(String title){
         super(title);
-        initComponents();
+        try {
+            UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+            initComponents();
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException | UnsupportedLookAndFeelException ex) {
+            Logger.getLogger(MyFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
     }
     
     private void initComponents(){
