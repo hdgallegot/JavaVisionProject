@@ -57,7 +57,7 @@ public class ControlCameraPanel implements ActionListener, CameraFrameListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource().equals(buttons[0])) {
-            camera.openCamera(0);
+            camera.openCamera(1);
         } else if (e.getSource().equals(buttons[1])) {
             if (camera.isOpen()) {
                 if(camera.isVideo()){

@@ -4,15 +4,12 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/controllers/ControlCameraPanel.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/values/MyBooleans.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/InRangeContours.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/TestIPColorReduce.java</file>
+            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/values/MyStrings.java</file>
+            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/graphics/panel/generalpanel/MyPanelButtons.java</file>
+            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/graphics/panel/generalpanel/MyPanelModificated.java</file>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/TestCamera.java</file>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/values/MyIntegers.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/camera/Camera.java</file>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/TestControlCameraPanel.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/imageproccessingOpenCV/ImageProccessingMethods.java</file>
-            <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/TestFrame.java</file>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/camera/ThreadCamera.java</file>
             <file>file:/home/aldajo/NetBeansProjects/PAEVisionArtificial/src/test/InRange.java</file>
         </group>
